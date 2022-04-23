@@ -1,0 +1,5 @@
+@mixin special-text {
+  @include important-text;
+  @include link;
+  @include special-border;
+}
