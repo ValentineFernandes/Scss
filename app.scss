@@ -1,5 +1,7 @@
-@mixin app-background($color) {
-  #{if(&, '&.app-background', '.app-background')} {
+@mixin app-background($color) 
+{
+  #{if(&, '&.app-background', '.app-background')} 
+  {
     background-color: $color;
     color: rgba(#fff, 0.75);
   }
@@ -7,6 +9,7 @@
 
 @include app-background(#036);
 
-.sidebar {
+.sidebar 
+{
   @include app-background(#c6538c);
 }
