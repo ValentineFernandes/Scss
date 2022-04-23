@@ -1,0 +1,10 @@
+ul li {
+  $padding: 16px;
+  padding-left: $padding;
+  [dir=rtl] & {
+    padding: {
+      left: 0;
+      right: $padding;
+    }
+  }
+}
