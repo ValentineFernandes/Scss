@@ -1,0 +1,14 @@
+/// Computes an exponent.
+///
+/// @param {number} $base
+///   The number to multiply by itself.
+/// @param {integer (unitless)} $exponent
+///   The number of `$base`s to multiply together.
+/// @return {number} `$base` to the power of `$exponent`.
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
