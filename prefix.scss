@@ -1,0 +1,10 @@
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+.gray {
+  @include prefix(filter, grayscale(50%), moz webkit);
+}
