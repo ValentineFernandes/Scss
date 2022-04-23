@@ -1,0 +1,4 @@
+@mixin btn($args...) {
+  @warn "The btn() mixin is deprecated. Include button() instead.";
+  @include button($args...);
+}
