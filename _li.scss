@@ -1,19 +1,23 @@
 $horizontal-list-gap: 2em;
 
-@mixin list-reset {
+@mixin list-reset 
+{
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@mixin list-horizontal {
+@mixin list-horizontal 
+{
   @include reset;
 
-  li {
+  li 
+  {
     display: inline-block;
-    margin: {
-      left: -2px;
-      right: $horizontal-list-gap;
-    }
-  }
+    margin: 
+      {
+        left: -2px;
+        right: $horizontal-list-gap;
+      }
+   }
 }
