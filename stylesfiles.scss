@@ -1,0 +1,5 @@
+@use "bootstra";
+
+li {
+  @include bootstra.list-reset;
+}
