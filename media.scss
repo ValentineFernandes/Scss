@@ -1,0 +1,16 @@
+@mixin media($types...) {
+  @each $type in $types {
+    @media #{$type} {
+      @content($type);
+    }
+  }
+}
+
+@include media(screen, print) using ($type) {
+  h1 {
+    font-size: 40px;
+    @if $type == print {
+      font-family: Calluna;
+    }
+  }
+}
