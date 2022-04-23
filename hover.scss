@@ -1,0 +1,6 @@
+.main aside:hover,
+.sidebar p {
+  parent-selector: &;
+  // => ((unquote(".main") unquote("aside:hover")),
+  //     (unquote(".sidebar") unquote("p")))
+}
