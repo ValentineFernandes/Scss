@@ -4,24 +4,31 @@ $-box-shadow: null;
 
 /// If the user has configured `$-box-shadow`, returns their configured value.
 /// Otherwise returns a value derived from `$-black`.
-@function -box-shadow() {
+@function -box-shadow() 
+{
   @return $-box-shadow or (0 0.5rem 1rem rgba($-black, 0.15));
 }
 
-@mixin configure($black: null, $border-radius: null, $box-shadow: null) {
-  @if $black {
+@mixin configure($black: null, $border-radius: null, $box-shadow: null) 
+{
+  @if $black 
+  {
     $-black: $black !global;
   }
-  @if $border-radius {
+  @if $border-radius 
+  {
     $-border-radius: $border-radius !global;
   }
-  @if $box-shadow {
+  @if $box-shadow 
+  {
     $-box-shadow: $box-shadow !global;
   }
 }
 
-@mixin styles {
-  code {
+@mixin styles 
+{
+  code 
+  {
     border-radius: $-border-radius;
     box-shadow: -box-shadow();
   }
