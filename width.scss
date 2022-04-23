@@ -1,0 +1,4 @@
+$widths: 50px, 30px, 100px;
+.micro {
+  width: min($widths...);
+}
