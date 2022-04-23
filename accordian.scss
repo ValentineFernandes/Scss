@@ -1,11 +1,13 @@
-.accordion {
+.accordion 
+{
   max-width: 600px;
   margin: 4rem auto;
   width: 90%;
   font-family: "Raleway", sans-serif;
   background: #f4f4f4;
 
-  &__copy {
+  &__copy 
+  {
     display: none;
     padding: 1rem 1.5rem 2rem 1.5rem;
     color: gray;
@@ -13,7 +15,8 @@
     font-size: 14px;
     font-weight: 500;
 
-    &--open {
+    &--open 
+    {
       display: block;
     }
   }
