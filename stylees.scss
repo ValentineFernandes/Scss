@@ -1,0 +1,8 @@
+@use "src/corn";
+
+.button {
+  @include corners.rounded;
+
+  // This is an error! $-radius isn't visible outside of `_corners.scss`.
+  padding: 5px + corners.$-radius;
+}
