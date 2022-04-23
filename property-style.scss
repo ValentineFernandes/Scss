@@ -1,0 +1,10 @@
+.enlarge {
+  font-size: 14px;
+  transition: {
+    property: font-size;
+    duration: 4s;
+    delay: 2s;
+  }
+
+  &:hover { font-size: 36px; }
+}
