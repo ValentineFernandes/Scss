@@ -1,0 +1,26 @@
+$roboto-font-path: "../fonts/roboto";
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$roboto-font-path}/Roboto-Thin.woff2") format("woff2");
+
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+@font-face {
+    // This is parsed as a normal function call that takes an arithmetic
+    // expression.
+    src: url($roboto-font-path + "/Roboto-Light.woff2") format("woff2");
+
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+@font-face {
+    // This is parsed as an interpolated special function.
+    src: url(#{$roboto-font-path}/Roboto-Regular.woff2) format("woff2");
+
+    font-family: "Roboto";
+    font-weight: 400;
+}
