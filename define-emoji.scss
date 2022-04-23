@@ -1,0 +1,10 @@
+@mixin define-emoji($name, $glyph) {
+  span.emoji-#{$name} {
+    font-family: IconFont;
+    font-variant: normal;
+    font-weight: normal;
+    content: $glyph;
+  }
+}
+
+@include define-emoji("women-holding-hands", "👭");
