@@ -1,0 +1,5 @@
+$logo-element: logo-bg;
+
+.logo {
+  background: element(##{$logo-element});
+}
