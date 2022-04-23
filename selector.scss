@@ -1,0 +1,16 @@
+@use "sass:selector";
+
+@mixin unify-parent($child) {
+  @at-root #{selector.unify(&, $child)} {
+    @content;
+  }
+}
+
+.wrapper .field {
+  @include unify-parent("input") {
+    /* ... */
+  }
+  @include unify-parent("select") {
+    /* ... */
+  }
+}
