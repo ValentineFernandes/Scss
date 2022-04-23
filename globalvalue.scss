@@ -1,0 +1,10 @@
+$variable: global value;
+
+.content {
+  $variable: local value;
+  value: $variable;
+}
+
+.sidebar {
+  value: $variable;
+}
