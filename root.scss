@@ -1,0 +1,13 @@
+$primary: #81899b;
+$accent: #302e24;
+$warn: #dfa612;
+
+:root {
+  --primary: #{$primary};
+  --accent: #{$accent};
+  --warn: #{$warn};
+
+  // Even though this looks like a Sass variable, it's valid CSS so it's not
+  // evaluated.
+  --consumed-by-js: $primary;
+}
