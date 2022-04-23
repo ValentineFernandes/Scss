@@ -1,0 +1,18 @@
+@mixin inline-animation($duration) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
+
+.pulse {
+  @include inline-animation(2s) {
+    from { background-color: yellow }
+    to { background-color: red }
+  }
+}
